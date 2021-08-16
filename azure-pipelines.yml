@@ -17,7 +17,10 @@ stages:
       dotnetSdkVersion: '3.x'
 
     steps:
-    - bash: sudo apt install nodejs -y
+    - bash: |
+        curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+        sudo apt install nodejs -y
+      displayName: dependencies installing
     - task: UseDotNet@2
       displayName: 'Use .NET SDK $(dotnetSdkVersion)'
       inputs:
