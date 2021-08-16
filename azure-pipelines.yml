@@ -17,6 +17,7 @@ stages:
       dotnetSdkVersion: '3.x'
 
     steps:
+    - bash: sudo apt install nodejs
     - task: UseDotNet@2
       displayName: 'Use .NET SDK $(dotnetSdkVersion)'
       inputs:
