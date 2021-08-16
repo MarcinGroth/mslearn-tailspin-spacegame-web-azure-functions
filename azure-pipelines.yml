@@ -18,7 +18,7 @@ stages:
 
     steps:
     - bash: |
-        sudo apt install nodejs -y
+        sudo apt install nodejs npm -y
         sudo npm install -g gulp-cli
       displayName: dependencies installing
     - task: UseDotNet@2
