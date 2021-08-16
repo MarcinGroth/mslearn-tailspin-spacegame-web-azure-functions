@@ -1,6 +1,6 @@
 trigger:
 - '*'
-
+pool: 'Azure Pipelines'
 variables:
   buildConfiguration: 'Release'
 
