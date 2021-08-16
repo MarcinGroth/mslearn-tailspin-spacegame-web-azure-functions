@@ -18,8 +18,7 @@ stages:
 
     steps:
     - bash: |
-        curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-        sudo apt install nodejs npm -y
+        sudo apt install nodejs -y
         sudo npm install -g gulp-cli
       displayName: dependencies installing
     - task: UseDotNet@2
